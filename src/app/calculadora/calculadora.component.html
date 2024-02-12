@@ -1,0 +1,26 @@
+<h1>Mini calculadora</h1>
+
+<form class="form-group row">
+    <div class="form-group col-md-3">
+        <label for="numero1">Numero 1:</label>
+        <input type="text" name="numero1" id="idvalor1" placeholder="{{valor1}}" class="form-control" [(ngModel)]="valor1">
+    </div>
+
+    <div class="form-group col-md-3">
+        <label for="numero2">Numero 2:</label>
+        <input type="text" name="numero2" id="idvalor2" placeholder="{{valor2}}" class="form-control" [(ngModel)]="valor2">
+    </div>
+
+    <div>
+        <input type="button" class="btn btn-primary md-y-3" value="Sumar" (click)="sumar()" />
+    </div>
+    <div>
+        <input type="button" class="btn btn-primary md-y-3" value="Restar" (click)="restar()" />
+    </div>
+
+
+</form>
+
+<div>
+    <p>Resultado: {{resultado}}</p>
+</div>
